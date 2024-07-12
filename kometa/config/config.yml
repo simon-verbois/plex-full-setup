@@ -1,0 +1,337 @@
+libraries:
+  Films: # Your library name
+    remove_overlays: true
+    collection_files:
+      - default: imdb
+        template_variables:
+          use_separator: false
+          use_lowest: false
+          use_popular: false
+          use_top: true
+          visible_library_top: true
+          visible_home_top: true
+          visible_shared_top: true
+          name_top: Films les mieux notés sur IMDb
+          summary_format: Collection avec les 250 films les mieux notés sur IMDb.
+      - default: continent
+        template_variables:
+          use_separator: false
+          sort_by: random
+          use_Africa: false
+          use_Americas: true
+          use_Antarctica: false
+          use_Asia: true
+          use_Europe: true
+          use_Oceania: true
+          summary_format: Collection de films tournés en <<key_name>>.
+          visible_library_Americas: true
+          visible_home_Americas: false
+          visible_shared_Americas: false
+          name_Americas: Films tourné en Amérique
+          visible_library_Antarctica: true
+          visible_home_Antarctica: false
+          visible_shared_Antarctica: false
+          name_Antarctica: Films tourné en Antarctique
+          visible_library_Asia: true
+          visible_home_Asia: false
+          visible_shared_Asia: false
+          name_Asia: Films tourné en Asie
+          visible_library_Europe: true
+          visible_home_Europe: false
+          visible_shared_Europe: false
+          name_Europe: Films tourné en Europe
+          visible_library_Oceania: true
+          visible_home_Oceania: true
+          visible_shared_Oceania: true
+          name_Oceania: Films tourné en Océanie
+      - default: tmdb
+        template_variables:
+          use_separator: false
+          use_trending: true
+          use_top: false
+          limit_popular: 30
+          name_trending: Films populaires
+          visible_library_trending: true
+          visible_home_trending: true
+          visible_shared_trending: true
+          summary_format: Collection des films les plus populaires sur TMDb pour le moment.
+      - default: genre
+        template_variables:
+          sort_by: random
+          use_separator: false
+          visible_library_ActionAdventure: true
+          visible_home_ActionAdventure: false
+          visible_shared_ActionAdventure: false
+          summary_ActionAdventure: Collection de films d'action et d'aventure.
+          name_ActionAdventure: Films - Action et Aventure
+          visible_library_Comédie: true
+          visible_home_Comédie: true
+          visible_shared_Comédie: true
+          summary_Comédie: Collection de films comiques.
+          name_Comédie: Films - Comédie
+          visible_library_Familial: true
+          visible_home_Familial: false
+          visible_shared_Familial: false
+          summary_Familial: Collection de films familiaux.
+          name_Familial: Films - Familial
+          visible_library_Fantastique: true
+          visible_home_Fantastique: false
+          visible_shared_Fantastique: false
+          summaryt_Fantastique: Collection de films fantastiques.
+          name_Fantastique: Films - Fantastique
+          visible_library_Guerre: true
+          visible_home_Guerre: false
+          visible_shared_Guerre: false
+          summaryt_Guerre: Collection de films de guerre.
+          name_Guerre: Films - Guerre
+          visible_library_Histoire: true
+          visible_home_Histoire: true
+          visible_shared_Histoire: true
+          summary_Histoire: Collection de films historiques.
+          name_Histoire: Films - Histoire
+          visible_library_Horreur: true
+          visible_home_Horreur: false
+          visible_shared_Horreur: false
+          summary_Horreur: Collection de films d'horreur.
+          name_Horreur: Films - Horreur
+          visible_library_Musique: true
+          visible_home_Musique: true
+          visible_shared_Musique: true
+          summary_Musique: Collection de films musicaux.
+          name_Musique: Films - Musique
+          visible_library_Mystère: true
+          visible_home_Mystère: false
+          visible_shared_Mystère: false
+          summary_Mystère: Collection de films mystérieux.
+          name_Mystère: Films - Mystère
+          visible_library_Western: true
+          visible_home_Western: true
+          visible_shared_Western: true
+          summary_Western: Collection de films western.
+          name_Western: Films - Western
+          visible_library_Thriller: true
+          visible_home_Thriller: false
+          visible_shared_Thriller: false
+          summary_Thriller: Collection de films thriller.
+          name_Thriller: Films - Thriller
+          visible_library_Science-Fiction: true
+          visible_home_Science-Fiction: true
+          visible_shared_Science-Fiction: true
+          summary_Science-Fiction: Collection de films de science-fiction.
+          name_Science-Fiction: Films - Science-Fiction
+          visible_library_Romance: true
+          visible_home_Romance: false
+          visible_shared_Romance: false
+          summary_Romance: Collection de films romantiques.
+          name_Romance: Films - Romance
+          visible_library_Crime: true
+          visible_home_Crime: true
+          visible_shared_Crime: true
+          summary_Crime: Collection de films criminels.
+          name_Crime: Films - Crime
+          visible_library_Biographie: true
+          visible_home_Biographie: false
+          visible_shared_Biographie: false
+          summary_Biographie: Collection de films biographiques.
+          name_Biographie: Films - Biographie
+          visible_library_Animation: true
+          visible_home_Animation: false
+          visible_shared_Animation: false
+          summary_Animation: Collection de films d'animation.
+          name_Animation: Films - Animation
+          visible_library_Drame: true
+          visible_home_Drame: false
+          visible_shared_Drame: false
+          summary_Drame: Collection de films dramatiques.
+          name_Drame: Films - Drame
+          exclude:
+            - Politics
+            - News
+            - Martial Arts
+            - Children
+          addons:
+            Animation:
+              - Anime
+            Biographie:
+              - Biography
+            Musique:
+              - Musical
+            ActionAdventure:
+              - Action
+              - Adventure
+              - Action/Adventure
+              - Action/adventure
+              - Action & Adventure
+              - Action & adventure
+              - Action and Adventure
+              - Action and adventure
+      - default: based
+        template_variables:
+          use_separator: false
+          use_comics: false
+          sort_by: random
+          visible_library_books: true
+          visible_home_books: true
+          visible_shared_books: true
+          name_books: Basé sur un livre
+          summary_format_books: Collection de films basé sur des livres.
+          visible_library_true_story: true
+          visible_home_true_story: false
+          visible_shared_true_story: false
+          name_true_story: Basé sur une histoire vraie
+          summary_format_true_story: Collection de films basé sur des histoires vraies.
+          visible_library_video_games: true
+          visible_home_video_games: false
+          visible_shared_video_games: false
+          name_video_games: Basé sur un jeu vidéo
+          summary_format_video_games: Collection de films basé sur des jeux vidéos.
+      - default: seasonal
+        template_variables:
+          use_separator: false
+          use_years: false
+          use_patrick: false
+          use_easter: false
+          use_valentine: true
+          use_mother: false
+          use_memorial: false
+          use_father: false
+          use_labor: false
+          use_independence: false
+          use_halloween: true
+          use_veteran: false
+          use_thanksgiving: false
+          use_christmas: true
+          use_aapi: false
+          use_disabilities: false
+          use_black_history: false
+          use_lgbtq: false
+          use_latinx: false
+          use_women: false
+          visible_library_valentine: true
+          visible_home_valentine: false
+          visible_shared_valentine: false
+          visible_library_halloween: true
+          visible_home_halloween: false
+          visible_shared_halloween: false
+          visible_library_christmas: true
+          visible_home_christmas: false
+          visible_shared_christmas: false
+          sort_by: random
+          name_christmas: Films de Noël
+          summary_format_christmas: Collection de films de Noël.
+          name_valentine: Films pour la saint-valentin
+          summary_format_valentine: Collection de films pour la saint-valentin.
+          name_halloween: Films d'halloween
+          summary_format_halloween: Collection de films d'Halloween.
+          name_easter: Film de pâques
+      - default: universe # optional
+        template_variables:
+          use_separator: false
+          include:
+            - mcu
+            - dcu
+            - xmen
+          trakt_list_mcu: https://trakt.tv/users/jawann2002/lists/marvel-cinematic-universe-movies?sort=rank,asc
+          trakt_list_dcu: https://trakt.tv/users/username57/lists/dc-extended-universe-dceu-timeline?sort=rank,asc
+          trakt_list_xmen: https://trakt.tv/users/boogie484/lists/x-men-chronological-order?sort=rank,asc
+      - default: decade
+        template_variables:
+          use_separator: false
+          visible_library_1960: true
+          visible_home_1960: false
+          visible_shared_1960: false
+          visible_library_1970: true
+          visible_home_1970: false
+          visible_shared_1970: false
+          visible_library_1980: true
+          visible_home_1980: false
+          visible_shared_1980: false
+          visible_library_1990: true
+          visible_home_1990: false
+          visible_shared_1990: false
+          visible_library_2000: true
+          visible_home_2000: false
+          visible_shared_2000: false
+          visible_library_2010: true
+          visible_home_2010: true
+          visible_shared_2010: true
+          visible_library_2020: true
+          visible_home_2020: false
+          visible_shared_2020: false
+          name_format: Films des années <<key_name>>
+          sort_by: random
+      - default: franchise # optional
+        template_variables:
+          exclude:
+            - スタジオジブリ
+      - file: config/collections.yml
+
+settings:
+  run_order:
+  - operations
+  - metadata
+  - collections
+  - overlays
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  asset_folders: true
+  asset_depth: 0
+  create_asset_folders: false
+  prioritize_assets: false
+  dimensional_asset_rename: false
+  download_url_assets: false
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  sync_mode: append
+  minimum_items: 2
+  default_collection_order:
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 2
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_unconfigured: true
+  show_filtered: false
+  show_options: true
+  show_missing: false
+  show_missing_assets: false
+  save_report: false
+  tvdb_language: fre
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_users: all
+  playlist_exclude_users:
+  playlist_report: false
+  verify_ssl: false
+  custom_repo:
+  overlay_artwork_filetype: jpg
+  overlay_artwork_quality:
+plex:
+  url: http://10.10.10.10:32400 # Be sure to not enforce the HTTPS on your plex server (google is your friend)
+  token: <plex-token>
+  timeout: 60
+  db_cache: 4096
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+  verify_ssl: false
+tmdb:
+  apikey: <tmdb-api-key>
+  language: fr
+  cache_expiration: 60
+  region: FR
+trakt:
+  client_id: <trakt-client-id>
+  client_secret: <trakt-client-secret>
+  pin: <trakt-pin>
+  authorization:
+    access_token: 
+    token_type: 
+    expires_in: 
+    refresh_token: 
+    scope: 
+    created_at: 

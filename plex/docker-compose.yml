@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  plex:
+    image: plexinc/pms-docker:latest
+    container_name: plex
+    restart: always
+    network_mode: host
+    env_file: .env
+    volumes:
+      - "/volume1/media/plex_medias:/media:rw"
+      - "./data:/config:rw"
+      - "./backup:/db_backup:rw"
+    devices:
+      - /dev/dri:/dev/dri # path for hw transcode with Synology DS920+

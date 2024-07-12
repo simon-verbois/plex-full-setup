@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  filebot:
+    image: jlesage/filebot:latest
+    container_name: filebot
+    restart: always
+    env_file: .env
+    volumes:
+      - "./data:/config:rw"
+      - "$HOME:/storage:rw"
+      - "/volume1/media/downloads:/watch:rw" # Source folder
+      - "/volume1/media/plex_medias:/output:rw" # Destination folder
+    ports:
+      - "5800:5800"
