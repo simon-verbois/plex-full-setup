@@ -12,7 +12,8 @@ Don't forget to custom the plex recommandations order in the library settings, l
 
 ## Dev
 I'm planning other improvements in the future, such as decompiling MKV files (or other video containers) in order to carry out some security scans, and developing a python script to convert subtitle files into SRT format (for greater user customization).<br>
-Don't forget to bookmark this project for future updates (you've got time for a coffee or two).
+Don't forget to bookmark this project for future updates (you've got time for a coffee or two). <br>
+I'm also planning to add the tv shows and animes management.
 
 ## Update the apps
 I've create a little script who's in charge of updating to the latest the apps every sunday at 4 am.
