@@ -1,0 +1,10 @@
+collections:
+  "Disney / Pixar":
+    collection_order: alpha
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/234588
+    sort_title: "!040_Disney / Pixar"
+    summary: "Une collection comprenant tous les films Disney et Pixar"
+    imdb_list:
+      - list_id: ls026785255
+      - list_id: ls087911008
