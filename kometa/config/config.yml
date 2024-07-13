@@ -1,6 +1,5 @@
 libraries:
   Films: # Your library name
-    remove_overlays: true
     collection_files:
       - default: imdb
         template_variables:
