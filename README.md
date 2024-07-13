@@ -7,6 +7,20 @@ The aim of this project is to get the most autonomous Plex instance possible, wh
 I therefore use more sub-applications and scripts to help me in my task. <br>
 I chose the docker platform to offer as much portability as possible (there are some elements to adapt to run elsewhere than on linux or synology).
 
+## Explanation 
+This will produce a home page like this every day:
+- continue watching 
+- trending movies
+- recently added
+- 2 random genre in a list of 6
+- top 250 IMDb
+- based on (in a list of 3)
+- 2 random genre in a list of 6
+- best don't watch movies 
+- best from a decade (random from 1960s to 2020s)
+- 2 random genre in a list of 5
+- films shot by continent (random every day too)
+
 ## Usage
 Don't forget to custom the plex recommandations order in the library settings, like this you will get a better result.
 
