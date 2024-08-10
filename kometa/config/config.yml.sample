@@ -1,0 +1,78 @@
+libraries:
+  Films: # Your library name
+    collection_files:
+      - default: franchise
+        template_variables:
+          exclude:
+            - スタジオジブリ
+      - file: config/collections.yml
+
+settings:
+  run_order:
+  - operations
+  - metadata
+  - collections
+  - overlays
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  asset_folders: true
+  asset_depth: 0
+  create_asset_folders: false
+  prioritize_assets: false
+  dimensional_asset_rename: false
+  download_url_assets: false
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  sync_mode: append
+  minimum_items: 2
+  default_collection_order:
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 2
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_unconfigured: true
+  show_filtered: false
+  show_options: true
+  show_missing: false
+  show_missing_assets: false
+  save_report: false
+  tvdb_language: fre
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_users: all
+  playlist_exclude_users:
+  playlist_report: false
+  verify_ssl: false
+  custom_repo:
+  overlay_artwork_filetype: jpg
+  overlay_artwork_quality:
+plex:
+  url: http://10.10.10.10:32400 # Be sure to not enforce the HTTPS on your plex server (GIYBF)
+  token: <your-personal-value-here>
+  timeout: 60
+  db_cache: 4096
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+  verify_ssl: false
+tmdb:
+  apikey: <your-personal-value-here>
+  language: fr
+  cache_expiration: 60
+  region: FR
+trakt:
+  client_id: <your-personal-value-here>
+  client_secret: <your-personal-value-here>
+  pin: <your-personal-value-here-during-first-run>
+  authorization:
+    access_token: 
+    token_type: 
+    expires_in: 
+    refresh_token:
+    scope: 
+    created_at:
