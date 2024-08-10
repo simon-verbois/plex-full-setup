@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   kometa:
-    image: lscr.io/linuxserver/kometa:latest
+    image: kometateam/kometa:latest
     container_name: kometa
     env_file: .env
     volumes:
