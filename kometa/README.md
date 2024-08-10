@@ -10,7 +10,7 @@ KOMETA (Plex Meta Manager) is a powerful tool designed to automate metadata mana
 I use Kometa to automate my collections, as well as the display on my home page.<br>
 I wanted to reproduce a home page that was a little more lively, like those on Netflix, Amazon Prime, etc.<br>
 So I used this collection system to achieve my goals.
-The randomizer script will run via a crontab (schedule), automatically modifying Kometa's configuration and changing the homepage every night.
+The randomizer script will run via docker and use kometa env schedule to run 1h before, automatically modifying Kometa's configuration and changing the homepage every night.
 
 ## Usage
 1. Adapt the timezone and running schedule in .env
@@ -24,10 +24,8 @@ The randomizer script will run via a crontab (schedule), automatically modifying
 7. You can find the Disney/Pixar collection in collections.yml, from there you can build your fully custom collections
 8. Transalte the summary key in collections.yml (1-2 min)
 9. The only thing you have to do, is translate the list content (depend on you language), these words are the yml keys used by Kometas (4-6 min)
-10. Add a schedule to run the script (in my case, /etc/crontab on Synology (via SSH)) <br>
-`30   2   *   *   *   root    /bin/bash /volume1/docker/kometa/randomizer.sh`
-11. If the script randomizer is running correctly, you can start the docker with `docker-compose up -d`, it will be executed every night at 5am (refer to step 1)
-12. Check with `docker logs kometa -f`
+10. If the script randomizer is running correctly, you can start the containers with `docker-compose up -d --build`, it will be executed every night at 5am (refer to step 1)
+11. Check with `docker logs kometa -f`
 
 ## Links
 Source/Wiki: https://kometa.wiki/en/latest/ <br>

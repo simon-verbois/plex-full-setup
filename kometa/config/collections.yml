@@ -1,10 +1,415 @@
 collections:
+# Specific collections
   "Disney / Pixar":
     collection_order: alpha
     sync_mode: sync
-    url_poster: https://theposterdb.com/api/assets/234588
-    sort_title: "!040_Disney / Pixar"
-    summary: "Une collection comprenant tous les films Disney et Pixar"
+    sort_title: "!090_Disney / Pixar"
+    summary: "Collection comprenant tous les films des studios Disney et Pixar."
     imdb_list:
       - list_id: ls026785255
       - list_id: ls087911008
+      - list_id: ls076436404
+  "Marvel Cinematic Universe":
+    trakt_list: https://trakt.tv/users/jawann2002/lists/marvel-cinematic-universe-movies?sort=rank,asc
+    sync_mode: sync
+    collection_order: custom
+    sort_title: "!070_Marvel Cinematic Universe"
+    summary: "Collection chronologique des films du Marvel Cinematic Universe."
+    visible_library: false
+    visible_home: true
+    visible_shared: true
+  "DC Comics Universe":
+    trakt_list: https://trakt.tv/users/username57/lists/dc-extended-universe-dceu-timeline?sort=rank,asc
+    sync_mode: sync
+    collection_order: custom
+    sort_title: "!070_DC Comics Universe"
+    summary: "Collection chronologique des films du DC Comics Universe."
+    visible_library: false
+    visible_home: true
+    visible_shared: true
+  "X-Men Universe":
+    trakt_list: https://trakt.tv/users/boogie484/lists/x-men-chronological-order?sort=rank,asc
+    sync_mode: sync
+    collection_order: custom
+    sort_title: "!070_X-Men Universe"
+    summary: "Collection chronologique des films du X-Men Universe."
+    visible_library: false
+    visible_home: true
+    visible_shared: true
+
+# Based on
+  "Basé sur un livre":
+    imdb_list: https://www.imdb.com/list/ls026212430/
+    sync_mode: sync
+    collection_order: random
+    sort_title: "!070_Basé sur un livre"
+    summary: "Collection de films basé sur des livres."
+    ###based-book###
+    visible_library: false
+    visible_home: true
+    visible_shared: true
+  "Basé sur une histoire vraie":
+    imdb_list: https://www.imdb.com/list/ls000266069/
+    sync_mode: sync
+    collection_order: random
+    sort_title: "!070_Basé sur une histoire vraie"
+    summary: "Collection de films basé sur des histoires vraies."
+    ###based-story###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+  "Basé sur un jeu vidéo":
+    imdb_list: https://www.imdb.com/list/ls033032210/
+    sync_mode: sync
+    collection_order: random
+    sort_title: "!070_Basé sur un jeu vidéo"
+    summary: "Collection de films basé sur des jeux vidéos."
+    ###based-video###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+# Top IMDb
+  "Films les mieux notés sur IMDb":
+    imdb_list: https://www.imdb.com/list/ls068082370/
+    sync_mode: sync
+    collection_order: custom
+    sort_title: "!030_Films les mieux notés sur IMDb"
+    summary: "Collection comprenant le top des films par note du publique sur IMDb."
+    visible_library: false
+    visible_home: true
+    visible_shared: true
+
+# Popular
+  "Films populaires":
+    trakt_chart:
+      - chart: trending
+        limit: 30
+      - chart: popular
+        limit: 30
+    collection_order: release
+    sort_title: "!040_Films populaires"
+    sync_mode: sync
+    summary: "Collection des films populaires et tendances sur Trakt."
+    visible_library: false
+    visible_home: true
+    visible_shared: true
+
+# Genre
+  "Films - Action et Aventure":
+    sort_title: "!050_Action et Aventure"
+    summary: "Films d'action et aventure."
+    collection_order: random
+    ###genre1-ActionAventure###
+    visible_library: false
+    visible_home: true
+    visible_shared: true
+    plex_search:
+      all:
+        genre: 
+          - Action
+          - Adventure
+      sort_by: random
+  "Films - Comédie":
+    sort_title: "!050_Comédie"
+    summary: "Films de comédie."
+    collection_order: random
+    ###genre2-Comédie###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        genre: 
+          - Comédie
+      sort_by: random
+  "Films - Familial":
+    sort_title: "!050_Familial"
+    summary: "Films familial."
+    collection_order: random
+    ###genre1-Familial###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        genre: 
+          - Familial
+      sort_by: random
+  "Films - Fantastique":
+    sort_title: "!050_Fantastique"
+    summary: "Films fantastique."
+    collection_order: random
+    ###genre2-Fantastique###
+    visible_library: false
+    visible_home: true
+    visible_shared: true
+    plex_search:
+      all:
+        genre: 
+          - Familial
+      sort_by: random
+  "Films - Guerre":
+    sort_title: "!050_Guerre"
+    summary: "Films de guerre."
+    collection_order: random
+    ###genre1-Guerre###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        genre: 
+          - Guerre
+      sort_by: random
+  "Films - Histoire":
+    sort_title: "!050_Histoire"
+    summary: "Films d'histoire."
+    collection_order: random
+    ###genre2-Histoire###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        genre: 
+          - Histoire
+      sort_by: random
+  "Films - Horreur":
+    sort_title: "!050_Horreur"
+    summary: "Films d'horreur."
+    collection_order: random
+    ###genre1-Horreur###
+    visible_library: false
+    visible_home: true
+    visible_shared: true
+    plex_search:
+      all:
+        genre: 
+          - Horreur
+      sort_by: random
+  "Films - Musical":
+    sort_title: "!050_Musical"
+    summary: "Films musical."
+    collection_order: random
+    ###genre2-Musical###
+    visible_library: false
+    visible_home: true
+    visible_shared: true
+    plex_search:
+      all:
+        genre: 
+          - Musical
+          - Musique
+      sort_by: random
+  "Films - Mystère":
+    sort_title: "!050_Mystère"
+    summary: "Films de mystère."
+    collection_order: random
+    ###genre1-Mystère###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        genre: 
+          - Mystère
+      sort_by: random
+  "Films - Western":
+    sort_title: "!050_Western"
+    summary: "Films de western."
+    collection_order: random
+    ###genre2-Western###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        genre: 
+          - Western
+      sort_by: random
+  "Films - Thriller":
+    sort_title: "!050_Thriller"
+    summary: "Films de thriller."
+    collection_order: random
+    ###genre1-Thriller###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        genre: 
+          - Thriller
+      sort_by: random
+  "Films - Science-Fiction":
+    sort_title: "!050_Science-Fiction"
+    summary: "Films de science-Fiction."
+    collection_order: random
+    ###genre2-Science-Fiction###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        genre: 
+          - Science-Fiction
+      sort_by: random
+  "Films - Romance":
+    sort_title: "!050_Romance"
+    summary: "Films de romance."
+    collection_order: random
+    ###genre1-Romance###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        genre: 
+          - Romance
+      sort_by: random
+  "Films - Crime":
+    sort_title: "!050_Crime"
+    summary: "Films de crime."
+    collection_order: random
+    ###genre2-Crime###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        genre: 
+          - Crime
+      sort_by: random
+  "Films - Biographie":
+    sort_title: "!050_Biographie"
+    summary: "Films Biographiques."
+    collection_order: random
+    ###genre1-Biographie###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        genre: 
+          - Biography
+      sort_by: random
+  "Films - Animation":
+    sort_title: "!050_Animation"
+    summary: "Films d'animation."
+    collection_order: random
+    ###genre2-Animation###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        genre: 
+          - Animation
+          - Anime
+      sort_by: random
+  "Films - Drame":
+    sort_title: "!050_Drame"
+    summary: "Films de drama."
+    collection_order: random
+    ###genre1-Drame###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        genre: 
+          - Drame
+      sort_by: random
+
+# Decade
+  "Films des années 1960":
+    sort_title: "!060_1960"
+    summary: "Films des années 1960."
+    collection_order: random
+    ###decade-1960###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        decade: 
+          - 1960
+      sort_by: random
+  "Films des années 1970":
+    sort_title: "!060_1970"
+    summary: "Films des années 1970."
+    collection_order: random
+    ###decade-1970###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        decade: 
+          - 1970
+      sort_by: random
+  "Films des années 1980":
+    sort_title: "!060_1980"
+    summary: "Films des années 1980."
+    collection_order: random
+    ###decade-1980###
+    visible_library: false
+    visible_home: true
+    visible_shared: true
+    plex_search:
+      all:
+        decade: 
+          - 1980
+      sort_by: random
+  "Films des années 1990":
+    sort_title: "!060_1990"
+    summary: "Films des années 1990."
+    collection_order: random
+    ###decade-1990###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        decade: 
+          - 1990
+      sort_by: random
+  "Films des années 2000":
+    sort_title: "!060_2000"
+    summary: "Films des années 2000."
+    collection_order: random
+    ###decade-2000###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        decade: 
+          - 2000
+      sort_by: random
+  "Films des années 2010":
+    sort_title: "!060_2010"
+    summary: "Films des années 2010."
+    collection_order: random
+    ###decade-2010###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        decade: 
+          - 2010
+      sort_by: random
+  "Films des années 2020":
+    sort_title: "!060_2020"
+    summary: "Films des années 2020."
+    collection_order: random
+    ###decade-2020###
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+    plex_search:
+      all:
+        decade: 
+          - 2020
+      sort_by: random
