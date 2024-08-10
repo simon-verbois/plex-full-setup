@@ -15,27 +15,18 @@ collections:
     collection_order: custom
     sort_title: "!070_Marvel Cinematic Universe"
     summary: "Collection chronologique des films du Marvel Cinematic Universe."
-    visible_library: false
-    visible_home: true
-    visible_shared: true
   "DC Comics Universe":
     trakt_list: https://trakt.tv/users/username57/lists/dc-extended-universe-dceu-timeline?sort=rank,asc
     sync_mode: sync
     collection_order: custom
     sort_title: "!070_DC Comics Universe"
     summary: "Collection chronologique des films du DC Comics Universe."
-    visible_library: false
-    visible_home: true
-    visible_shared: true
   "X-Men Universe":
     trakt_list: https://trakt.tv/users/boogie484/lists/x-men-chronological-order?sort=rank,asc
     sync_mode: sync
     collection_order: custom
     sort_title: "!070_X-Men Universe"
     summary: "Collection chronologique des films du X-Men Universe."
-    visible_library: false
-    visible_home: true
-    visible_shared: true
 
 # Based on
   "Basé sur un livre":
